@@ -1,4 +1,5 @@
-Clockory – Datenschutzerklärung / Privacy Policy</title>
+Clockory – Datenschutzerklärung / Privacy Policy
+
 Clockory speichert und verarbeitet alle in der App eingegebenen Daten
 ausschließlich lokal auf dem Gerät des Nutzers.
 Es werden keine personenbezogenen Daten an externe Server, Cloud-Dienste,
