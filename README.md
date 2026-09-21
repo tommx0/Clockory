@@ -1,2 +1,0 @@
-# Clockory
-Stechuhr für IOS
