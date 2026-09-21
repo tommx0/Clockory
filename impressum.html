@@ -1,75 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Impressum für Clockory">
-  <title>Clockory – Impressum / Legal Notice</title>
-  <style>
-    :root { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color-scheme: light dark; }
-    body { margin: 0; min-height: 100vh; background: #101225; color: #f4f4fb; }
-    main { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0; }
-    article { padding: 32px; border: 1px solid rgba(255,255,255,.14); border-radius: 24px; background: rgba(255,255,255,.07); box-shadow: 0 20px 60px rgba(0,0,0,.28); }
-    h1 { margin-top: 0; font-size: clamp(2rem, 6vw, 3.2rem); letter-spacing: -.04em; }
-    h2 { margin-top: 36px; font-size: 1.25rem; }
-    p, address { color: #c5c6d8; line-height: 1.75; }
-    a { color: #a5b4fc; }
-    .language { display: inline-block; margin-bottom: 12px; color: #a5b4fc; font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-    footer { margin-top: 24px; color: #9294ae; font-size: .85rem; text-align: center; }
-    footer a { margin: 0 8px; }
-    @media (max-width: 520px) { main { width: min(100% - 24px, 760px); padding: 24px 0; } article { padding: 24px 20px; } }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockory - Datenschutz & Impressum / Privacy & Legal Notice</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; color: #111; }
+        h2 { margin-top: 30px; color: #222; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .lang-section { margin-bottom: 50px; }
+        .meta-date { font-style: italic; color: #666; margin-bottom: 20px; }
+        .nav-links { margin-bottom: 30px; background: #eee; padding: 10px; border-radius: 4px; }
+        .nav-links a { margin-right: 15px; color: #0066cc; text-decoration: none; font-weight: bold; }
+        .nav-links a:hover { text-decoration: underline; }
+        .address-block { background: #f5f5f5; padding: 15px; border-radius: 4px; font-variant-numeric: tabular-nums; }
+    </style>
 </head>
 <body>
-  <main>
-    <article>
-      <h1>Clockory</h1>
 
-      <section lang="de">
-        <span class="language">Deutsch</span>
+<div class="container">
+    <h1>Clockory</h1>
+    
+    <!-- Schnellanwahl auf der Seite -->
+    <div class="nav-links">
+        <a href="#de">Deutsch</a> | 
+        <a href="#en">English</a>
+    </div>
+
+    <!-- ================= DEUTSCHE VERSION ================= -->
+    <div id="de" class="lang-section">
         <h2>Impressum</h2>
-        <p><strong>Stand: 21. September 2026</strong></p>
+        <p class="meta-date">Stand: 21. September 2026</p>
+        <p><strong>Angaben gemäß den gesetzlichen Bestimmungen</strong></p>
+        
+        <div class="address-block">
+            <strong>Thomas Marx</strong><br>
+            Egmontstrasse 27<br>
+            42719 Solingen<br>
+            Deutschland<br><br>
+            <strong>Telefon:</strong> +49 (0) 212 25434287 &nbsp;<em><!-- TODO: Hier echte Nummer eintragen --></em><br>
+            <strong>E-Mail:</strong> thomas.marx@me.com
+        </div>
 
-        <h2>Angaben gemäß den gesetzlichen Bestimmungen</h2>
-        <address>
-          Thomas Marx<br>
-          Egmontstrasse 27<br>
-          42719 Solingen<br>
-          Deutschland<br>
-          E-Mail: <a href="mailto:thomas.marx@me.com">thomas.marx@me.com</a>
-        </address>
-
-        <h2>Verantwortlich für den Inhalt</h2>
+        <p><strong>Verantwortlich für den Inhalt</strong></p>
         <p>Thomas Marx, Anschrift wie oben.</p>
 
-        <h2>Datenschutz</h2>
-        <p>Informationen zur Verarbeitung personenbezogener Daten findest du in der <a href="privacy/">Datenschutzerklärung</a>.</p>
-      </section>
+        <h2 id="datenschutz-de">Datenschutzerklärung</h2>
+        <p class="meta-date">Stand: 21. September 2026</p>
+        
+        <p><strong>1. Allgemeine Hinweise</strong><br>
+        Diese Datenschutzerklärung klärt dich über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten innerhalb unserer App <strong>Clockory</strong> sowie dieser Webseite auf.</p>
+        
+        <p><strong>2. Datenerfassung in der App</strong><br>
+        <!-- WAHL A: Wenn du gar KEINE Daten sammelst: -->
+        Die App <em>Clockory</em> erfasst, speichert oder teilt keinerlei personenbezogene Daten oder Nutzungsmetriken. Es sind keine Analyse-Tools oder Tracking-Frameworks von Drittanbietern integriert.
+        
+        <!-- WAHL B (Falls du doch z.B. Firebase o.ä. nutzt, hier anpassen):
+        Wir nutzen Drittanbieter-Tools zur Verbesserung der App: [Hier Tools auflisten, z.B. Firebase Crashlytics] -->
+        </p>
 
-      <section lang="en">
-        <span class="language">English</span>
+        <p><strong>3. Hosting dieser Webseite (GitHub Pages)</strong><br>
+        Diese Webseite wird auf den Servern von GitHub Inc. (USA) gehostet. Beim Aufruf dieser Seite erfasst GitHub automatisch Log-Dateien (u.a. IP-Adresse, Browsertyp, Datum/Uhrzeit). Dies ist technisch notwendig, um die Seite sicher und stabil bereitzustellen. Details findest du in der Datenschutzerklärung von GitHub.</p>
+    </div>
+
+    <!-- ================= ENGLISH VERSION ================= -->
+    <div id="en" class="lang-section">
         <h2>Legal Notice</h2>
-        <p><strong>Last updated: September 21, 2026</strong></p>
+        <p class="meta-date">Last updated: September 21, 2026</p>
+        <p><strong>Provider</strong></p>
+        
+        <div class="address-block">
+            <strong>Thomas Marx</strong><br>
+            Egmontstrasse 27<br>
+            42719 Solingen<br>
+            Germany<br><br>
+            <strong>Phone:</strong> +49 (0) 212 25434287 &nbsp;<em><!-- TODO: Insert real number here --></em><br>
+            <strong>Email:</strong> thomas.marx@me.com
+        </div>
 
-        <h2>Provider</h2>
-        <address>
-          Thomas Marx<br>
-          Egmontstrasse 27<br>
-          42719 Solingen<br>
-          Germany<br>
-          Email: <a href="mailto:thomas.marx@me.com">thomas.marx@me.com</a>
-        </address>
-
-        <h2>Responsible for content</h2>
+        <p><strong>Responsible for content</strong></p>
         <p>Thomas Marx, address as stated above.</p>
 
-        <h2>Privacy</h2>
-        <p>Information about personal-data processing is available in the <a href="privacy/">Privacy Policy</a>.</p>
-      </section>
-    </article>
-    <footer>
-      © 2026 Clockory · <a href="privacy/">Datenschutz</a>
-    </footer>
-  </main>
+        <h2 id="privacy-en">Privacy Policy</h2>
+        <p class="meta-date">Last updated: September 21, 2026</p>
+        
+        <p><strong>1. General Information</strong><br>
+        This privacy policy informs you about the nature, scope, and purpose of the processing of personal data within our app <strong>Clockory</strong> and this website.</p>
+        
+        <p><strong>2. Data Collection in the App</strong><br>
+        <!-- OPTION A: If you collect NO data at all: -->
+        The <em>Clockory</em> app does not collect, store, or share any personal data or user metrics. No third-party analytics or tracking tools are integrated.
+        
+        <!-- OPTION B (If you use tools like Firebase, change this section):
+        We use third-party tools to improve our app: [List tools here] -->
+        </p>
+
+        <p><strong>3. Website Hosting (GitHub Pages)</strong><br>
+        This website is hosted on servers operated by GitHub Inc. (USA). When accessing this site, GitHub automatically logs certain technical data (such as your IP address, browser type, and timestamp) to ensure security and stability. For more information, please refer to GitHub's privacy statement.</p>
+    </div>
+</div>
+
 </body>
 </html>
